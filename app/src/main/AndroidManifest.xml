@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cxp.rxjava2">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--RxJava基础操作 Begin-->
+        <activity android:name=".ui.test.TestActivity" />
+        <activity android:name=".ui.test.rx.RxCreateActivity" />
+        <activity android:name=".ui.test.rx.RxZipActivity"/>
+        <activity android:name=".ui.test.rx.RxMapActivity"/>
+        <activity android:name=".ui.test.rx.RxFlatMapActivity"/>
+        <activity android:name=".ui.test.rx.RxConcatMapActivity"/>
+        <activity android:name=".ui.test.rx.RxDoOnNextActivity"/>
+        <activity android:name=".ui.test.rx.RxFilterActivity"/>
+        <activity android:name=".ui.test.rx.RxSkipActivity"/>
+        <activity android:name=".ui.test.rx.RxTakeActivity"/>
+        <activity android:name=".ui.test.rx.RxTimerActivity"/>
+        <activity android:name=".ui.test.rx.RxIntervalActivity"/>
+        <activity android:name=".ui.test.rx.RxJustActivity"/>
+        <activity android:name=".ui.test.rx.RxSingleActivity"/>
+        <activity android:name=".ui.test.rx.RxConcatActivity"/>
+        <activity android:name=".ui.test.rx.RxDistinctActivity"/>
+        <activity android:name=".ui.test.rx.RxBufferActivity"/>
+        <activity android:name=".ui.test.rx.RxDebounceActivity"/>
+        <activity android:name=".ui.test.rx.RxDeferActivity"/>
+        <activity android:name=".ui.test.rx.RxLastActivity"/>
+        <activity android:name=".ui.test.rx.RxMergeActivity"/>
+        <activity android:name=".ui.test.rx.RxReduceActivity"/>
+        <activity android:name=".ui.test.rx.RxScanActivity"/>
+        <activity android:name=".ui.test.rx.RxWindowActivity"/>
+        <activity android:name=".ui.test.rx.RxPublishSubjectActivity"/>
+        <activity android:name=".ui.test.rx.RxAsyncSubjectActivity"/>
+        <activity android:name=".ui.test.rx.RxBehaviorSubjectActivity"/>
+        <activity android:name=".ui.test.rx.RxCompletableActivity"/>
+        <activity android:name=".ui.test.rx.RxFlowableActivity"/>
+        <!--RxJava基础操作 End-->
+
+        <!--RxJava实战操作 Begin-->
+        <activity android:name=".ui.demo.DemoActivity" />
+        <activity android:name=".ui.demo.rx.RxNetSingleActivity"/>
+        <activity android:name=".ui.demo.rx.RxNetworkActivity"/>
+        <activity android:name=".ui.demo.rx.RxCaseZipActivity"/>
+        <activity android:name=".ui.demo.rx.RxCaseFlatMapActivity"/>
+        <activity android:name=".ui.demo.rx.RxCaseConcatActivity"/>
+        <activity android:name=".ui.demo.rx.RxThreadActivity"/>
+        <!--RxJava实战操作 End-->
+    </application>
+
+</manifest>
